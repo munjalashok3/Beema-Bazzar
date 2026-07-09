@@ -1,0 +1,541 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins,sans-serif;background:#f5f9ff;color:#222}
+.container{width:min(1200px,92%);margin:auto}
+header{position:sticky;top:0;background:#0b4ea2;color:#fff;padding:18px 0}
+.nav{display:flex;justify-content:space-between;align-items:center}
+.logo span{color:#39d98a}
+nav ul{display:flex;gap:24px;list-style:none}
+nav a{text-decoration:none;color:#fff}
+.nav-btn,.primary-btn,button{background:#39d98a;color:#fff;padding:12px 22px;border:none;border-radius:10px;text-decoration:none;cursor:pointer}
+.hero{padding:70px 0;background:linear-gradient(135deg,#0b4ea2,#2b74d8)}
+.hero-container{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.hero-left{color:#fff}
+.badge{display:inline-block;background:#ffffff22;padding:8px 14px;border-radius:30px;margin-bottom:18px}
+.hero h1{font-size:52px;margin:18px 0}
+.hero p{line-height:1.7;margin-bottom:25px}
+.hero-buttons{display:flex;gap:15px;margin-bottom:30px}
+.secondary-btn{border:2px solid #fff;color:#fff;padding:12px 22px;border-radius:10px;text-decoration:none}
+.trust-box{display:flex;gap:20px}
+.trust-box div{background:#ffffff18;padding:18px;border-radius:14px}
+.lead-card{background:#fff;padding:30px;border-radius:18px;box-shadow:0 20px 50px rgba(0,0,0,.15)}
+.lead-card form{display:flex;flex-direction:column;gap:14px}
+input,select,button{padding:14px;border:1px solid #ddd;border-radius:10px}
+button{background:#0b4ea2}
+@media(max-width:900px){.hero-container{grid-template-columns:1fr}nav{display:none}.hero h1{font-size:36px}}/* ==========================
+   SERVICES SECTION
+========================== */
+
+.services{
+    padding:80px 0;
+    background:#f8fbff;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title span{
+    color:#0b4ea2;
+    font-weight:700;
+    letter-spacing:2px;
+    font-size:14px;
+}
+
+.section-title h2{
+    font-size:40px;
+    margin:15px 0;
+    color:#1b1b1b;
+}
+
+.section-title p{
+    color:#666;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.service-card{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    transition:.35s;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(11,78,162,.20);
+}
+
+.service-icon{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.service-card h3{
+    margin-bottom:15px;
+}
+
+.service-card p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.service-card a{
+    color:#0b4ea2;
+    text-decoration:none;
+    font-weight:700;
+}/*=========================
+WHY CHOOSE US
+=========================*/
+
+.why-us{
+    padding:90px 0;
+    background:#ffffff;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.why-card{
+    background:#f8fbff;
+    padding:35px;
+    border-radius:18px;
+    text-align:center;
+    transition:0.35s;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.why-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(11,78,162,.18);
+}
+
+.why-icon{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.why-card h3{
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.why-card p{
+    color:#666;
+    line-height:1.8;
+}/*=========================
+ABOUT US
+=========================*/
+
+.about-us{
+    padding:90px 0;
+    background:#f5f9ff;
+}
+
+.about-container{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about-content span{
+    color:#0b4ea2;
+    font-weight:700;
+    letter-spacing:2px;
+    font-size:14px;
+}
+
+.about-content h2{
+    font-size:42px;
+    margin:15px 0 25px;
+    color:#222;
+}
+
+.about-content p{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:30px;
+}
+
+.about-points{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    font-weight:600;
+}
+
+.about-box{
+    background:#0b4ea2;
+    color:#fff;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 20px 40px rgba(11,78,162,.25);
+}
+
+.about-box h3{
+    font-size:42px;
+    margin:20px 0 5px;
+}
+
+.about-box p{
+    margin-bottom:20px;
+    opacity:.9;
+}
+
+@media(max-width:768px){
+
+.about-container{
+    grid-template-columns:1fr;
+}
+
+.about-points{
+    grid-template-columns:1fr;
+}
+
+}/*=========================
+INSURANCE option
+=========================*/
+
+.option{
+
+padding:90px 0;
+
+background:#ffffff;
+
+}
+
+.option-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+margin-top:50px;
+
+}
+
+.option-card{
+
+background:#f8fbff;
+
+padding:35px;
+
+border-radius:15px;
+
+text-align:center;
+
+font-size:22px;
+
+font-weight:700;
+
+color:#0b4ea2;
+
+transition:.3s;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.option-card:hover{
+
+transform:translateY(-8px);
+
+background:#0b4ea2;
+
+color:#fff;
+
+}/*=========================
+TESTIMONIALS
+=========================*/
+
+.testimonials{
+    padding:90px 0;
+    background:#f5f9ff;
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.testimonial-card{
+    background:#fff;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(11,78,162,.18);
+}
+
+.stars{
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.testimonial-card p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.testimonial-card h4{
+    color:#0b4ea2;
+    margin-bottom:5px;
+}
+
+.testimonial-card span{
+    color:#888;
+    font-size:14px;
+}/*=========================
+FAQ SECTION
+=========================*/
+
+.faq{
+    padding:90px 0;
+    background:#ffffff;
+}
+
+.faq-container{
+    max-width:900px;
+    margin:50px auto 0;
+}
+
+.faq-item{
+    background:#f8fbff;
+    border-radius:15px;
+    margin-bottom:20px;
+    padding:20px 25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.faq-item summary{
+    cursor:pointer;
+    font-size:18px;
+    font-weight:600;
+    color:#0b4ea2;
+    list-style:none;
+}
+
+.faq-item summary::-webkit-details-marker{
+    display:none;
+}
+
+.faq-item p{
+    margin-top:15px;
+    color:#666;
+    line-height:1.8;
+}/*=========================
+CONTACT SECTION
+=========================*/
+
+.contact{
+
+padding:90px 0;
+
+background:#f5f9ff;
+
+}
+
+.contact-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:40px;
+
+margin-top:50px;
+
+}
+
+.contact-info{
+
+background:#0b4ea2;
+
+color:#fff;
+
+padding:40px;
+
+border-radius:20px;
+
+}
+
+.contact-info h3{
+
+margin-bottom:25px;
+
+font-size:28px;
+
+}
+
+.contact-info p{
+
+margin-bottom:18px;
+
+line-height:1.8;
+
+}
+
+.contact-form{
+
+background:#fff;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.contact-form form{
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+padding:15px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+font-size:16px;
+
+}
+
+.contact-form textarea{
+
+height:150px;
+
+resize:none;
+
+}
+
+.contact-form button{
+
+background:#0b4ea2;
+
+color:#fff;
+
+border:none;
+
+padding:15px;
+
+font-size:17px;
+
+border-radius:10px;
+
+cursor:pointer;
+
+}
+
+.contact-form button:hover{
+
+background:#083d81;
+
+}
+
+@media(max-width:768px){
+
+.contact-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}/*=========================
+FOOTER
+=========================*/
+
+.footer{
+    background:#0b4ea2;
+    color:#fff;
+    padding:70px 0 20px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+}
+
+.footer h3{
+    margin-bottom:20px;
+}
+
+.footer p,
+.footer li,
+.footer a{
+    color:#dfe9ff;
+    text-decoration:none;
+    line-height:2;
+    list-style:none;
+}
+
+.footer ul{
+    padding:0;
+}
+
+.copyright{
+    text-align:center;
+    margin-top:40px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.2);
+    font-size:14px;
+}/*=========================
+WHATSAPP BUTTON
+=========================*/
+
+.whatsapp-btn{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:#fff;
+    text-decoration:none;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    z-index:9999;
+    transition:.3s;
+}
+
+.whatsapp-btn:hover{
+    transform:scale(1.1);
+}
