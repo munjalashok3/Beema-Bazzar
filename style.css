@@ -562,7 +562,7 @@ WHATSAPP BUTTON
     bottom:95px;
     width:55px;
     height:55px;
-    background:#0d6efd;
+    background:red;
     color:#fff;
     border-radius:50%;
     display:flex;
@@ -571,7 +571,8 @@ WHATSAPP BUTTON
     text-decoration:none;
     font-size:26px;
     box-shadow:0 4px 12px rgba(0,0,0,0.25);
-    z-index:999;
+    z-index:99999;
+    display:flex !important;
     transition:0.3s;
 }
 
