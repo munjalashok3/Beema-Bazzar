@@ -555,3 +555,26 @@ WHATSAPP BUTTON
 .footer-links a:hover{
     color:#ffd54f;
 }
+
+.call-btn{
+    position:fixed;
+    right:25px;
+    bottom:95px;
+    width:55px;
+    height:55px;
+    background:#0d6efd;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:26px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.25);
+    z-index:999;
+    transition:0.3s;
+}
+
+.call-btn:hover{
+    transform:scale(1.1);
+}
