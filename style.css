@@ -539,3 +539,19 @@ WHATSAPP BUTTON
 .whatsapp-btn:hover{
     transform:scale(1.1);
 }
+.footer-links{
+    text-align:center;
+    margin:20px 0 10px;
+}
+
+.footer-links a{
+    color:#ffffff;
+    text-decoration:none;
+    margin:0 8px;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.footer-links a:hover{
+    color:#ffd54f;
+}
